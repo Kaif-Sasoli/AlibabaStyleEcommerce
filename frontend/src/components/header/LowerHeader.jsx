@@ -33,7 +33,7 @@ function LowerHeader({
 
   return (
     <nav 
-      className={`lg:border-b-[1px] lg:border-t-[1px] py-2  lg:py-1.5 border-textcolor 
+      className={`lg:border-b-[1px] lg:border-t-[1px] py-3 pb-4 lg:pb-3 lg:py-1.5 border-textcolor 
       flex items-center justify-between ${className}`}>
 
        <ul className={`w-full flex items-center gap-1 justify-center 

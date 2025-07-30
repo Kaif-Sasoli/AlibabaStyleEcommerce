@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
 
 @theme {
@@ -7,4 +8,41 @@
     --color-secondary3: #0D6EFD33;
     --color-textcolor: #8B96A5;
     --color-graycolor: #EFF2F4;
+    --color-backgroundGray: #F7FAFC;
+    --color-backgroundBlue: #E5F1FF;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background: transparent;
+  pointer-events: auto;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  -webkit-appearance: none;
+  border: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  border: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: var(--color-secondary3); /* Lighter blue track */
+  border-radius: 8px;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 4px;
+  background: var(--color-secondary3);
+  border-radius: 8px;
 }

@@ -3,6 +3,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 
 function Logo({
     className='',
+    textClass = 'text-xl'
 
 }) {
   return (
@@ -10,8 +11,8 @@ function Logo({
       className={`w-fit flex items-center gap-2 ${className} `}>
         
          <div
-          className='text-white bg-secondary p-2 rounded-md relative
-          z-10'>
+          className={`text-white bg-secondary p-2 rounded-md relative
+          z-10 ${className}`}>
           <HiOutlineShoppingBag />
 
             <div className='bg-secondary3 w-full h-full px-1.5 absolute rounded-md -z-10
@@ -19,7 +20,7 @@ function Logo({
           </div>
        
        <p 
-        className='text-secondary2 text-xl font-bold'
+        className={`${textClass} text-secondary2 font-bold `}
        >Brand</p>
     </div>
   )

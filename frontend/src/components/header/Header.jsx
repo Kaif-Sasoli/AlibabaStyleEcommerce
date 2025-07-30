@@ -5,7 +5,7 @@ import LowerHeader from './LowerHeader'
 function Header({ onSidebarToggle }) {
   return (
     <div
-      className='fixed w-full border-b-[1px] py-1 b 
+      className='fixed top-0 w-full border-b-[1px] 
         lg:border-none border-gray-200 z-50 bg-white'>
          <UpperHeader
            className = 'px-5 lg:px-14'

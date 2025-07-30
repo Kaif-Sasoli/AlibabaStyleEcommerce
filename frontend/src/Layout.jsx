@@ -13,13 +13,13 @@ function Layout() {
   return (
     <div>
         <Header onSidebarToggle={toggleSidebar} />
-
+        
         <DashboardSidebar 
         isOpen={isSidebarOpen} 
         onClose={closeSidebar} 
       />
-      
-        <main>
+       {/* mt-[38.5%]  md:mt-[15%] lg:mt-[8.5%] */}
+        <main className='pt-36 lg:pt-28  bg-backgroundGray'>
           <Outlet/>
         </main>
         <Footer/>

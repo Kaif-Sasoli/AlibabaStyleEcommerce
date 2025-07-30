@@ -32,7 +32,7 @@ const FooterColumn = ({ title, items, className='' }) => {
           hover:text-black cursor-pointer">
             {item}
             </li>
-        ))}
+        ))} 
       </ul>
     </div>
   );
