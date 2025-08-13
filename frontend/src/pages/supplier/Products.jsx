@@ -75,7 +75,7 @@ function Products({ className}) {
        {/* Loader or Products */}
       {loading ? (
         <div className="flex justify-center items-center py-40">
-          <MoonLoader size={40} color="#3b82f6" />
+          <MoonLoader size={50} color="#3b82f6" />
         </div>
       ) : (
         <div className={`w-full grid gap-3 ${selectedView === 'list'

@@ -73,7 +73,7 @@ function ProductDetails() {
        {loading ? (
         // Loader while fetching
         <div className="flex justify-center items-center min-h-[400px]">
-          <MoonLoader size={40} color="#36d7b7" />
+          <MoonLoader size={50} color="#36d7b7" />
         </div>
       ) : (
          <>
