@@ -1,0 +1,137 @@
+# 🎨 E-Commerce Frontend
+
+This is the **frontend** implementation of an **E-Commerce Platform** developed during my **Developer Hub Internship**.  
+It is built with **React**, **Redux Toolkit**, **React Router**, **Tailwind CSS**, and other modern libraries to provide a responsive and dynamic user experience.
+
+---
+
+## 🚀 Features
+
+### **Buyer Side**
+- 🔍 **Search Products** – Browse and search for products easily.
+- 🛒 **Shopping Cart** – Add, remove, and manage cart items.
+- 📄 **Product Details Page** – View complete product information.
+- 🔑 **Authentication** – Sign-in, Sign-up, and Email Verification.
+- 👤 **Buyer Dashboard** – Manage orders and account details.
+
+### **Supplier Side**
+- 📦 **Supplier Dashboard** – Manage inventory and products.
+- ✏️ **Product Management** – Add, edit, and delete products.
+- 🖼 **Image Upload** – Upload product images.
+- ⚙️ **Settings & Profile Management** – Update supplier details.
+
+---
+
+## 🛠 Tech Stack
+
+**Core:**  
+- [React](https://react.dev/) – UI Library  
+- [React Router](https://reactrouter.com/) – Routing  
+- [Redux Toolkit](https://redux-toolkit.js.org/) – State Management  
+
+**UI & Styling:**  
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework  
+- [Lucide React](https://lucide.dev/) – Icons  
+- [React Toastify](https://fkhadra.github.io/react-toastify/) – Notifications  
+
+**Utilities & Libraries:**  
+- [Axios](https://axios-http.com/) – API Requests  
+- [React Hook Form](https://react-hook-form.com/) – Form handling  
+- [Embla Carousel](https://www.embla-carousel.com/) – Product sliders  
+- [Recharts](https://recharts.org/) – Charts and analytics  
+
+---
+
+## 📦 Dependencies (from `package.json`)
+
+```json
+{
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
+    "@reduxjs/toolkit": "^2.8.2",
+    "@tailwindcss/vite": "^4.1.11",
+    "axios": "^1.11.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.6.0",
+    "lucide-react": "^0.525.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.61.1",
+    "react-icons": "^5.5.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.7.1",
+    "react-spinners": "^0.17.0",
+    "react-toastify": "^11.0.5",
+    "recharts": "^3.1.0",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.11"
+  }
+  
+}
+``` 
+
+📂 Folder Structure (Frontend)
+```frontend/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── auth/               # Auth related components
+│   │   ├── buyer_dashboard/    # Buyer dashboard components
+│   │   ├── supplier_dashboard/ # Supplier dashboard components
+│   │   ├── CartProtectedRoute.jsx
+│   │   ├── EditProfile.jsx
+│   │
+│   ├── pages/
+│   │   ├── auth/               # SignIn, SignUp, VerifyEmail
+│   │   ├── buyer/              # Buyer dashboard pages
+│   │   ├── supplier/           # Supplier dashboard pages
+│   │   ├── Home.jsx
+│   │   ├── SearchResultsPage.jsx
+│   │   ├── ProductDetails.jsx
+│   │   ├── Cart.jsx
+│   │
+│   ├── store/
+│   │   ├── authSlice.js        # Redux auth state management
+│   │
+│   ├── Layout.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│
+├── tailwind.config.js
+├── package.json
+└── vite.config.js
+```
+⚙️ Installation & Setup
+1️⃣ Clone the repository
+```
+git clone https://github.com/Kaif-Sasoli/alibaba-clone.git
+ecommerce-frontend.git
+cd frontend
+```
+2️⃣ Install dependencies
+```
+npm install
+```
+3️⃣ Start development server
+```
+npm run dev
+```
+🛠 Key Routes (from App.jsx)
+```
+/ – Home Page
+
+/search – Search Results
+
+/product/:productId – Product Details
+
+/cart – Cart (Protected)
+
+/signin, /signup, /verifyemail – Auth Pages
+
+/supplier/dashboard, /supplier/products, /supplier/add-product – Supplier Dashboard
+
+/buyer/dashboard – Buyer Dashboard
+```
+
+
